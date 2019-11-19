@@ -34,17 +34,15 @@ Next, install Flask, Flask Sqlalchemy and MySQL client library w:
 pip install flask flask-sqlalchemy mysqlclient
 ```
 
-
 ## TODO
 
-* [ ] Python3 Evirontment
-* [ ] Database Setup
-* [ ] Models
-* [ ] Migration
-* [ ] Blueprints
-* [ ] Home Blueprint
-* [ ] Auth Blueprint
-* [ ] Conclusion
+- [x] Database Setup
+- [x] Models
+- [ ] Migration
+- [ ] Blueprints
+- [ ] Home Blueprint
+- [ ] Auth Blueprint
+- [ ] Conclusion
 
 ## Database setup
 
@@ -53,18 +51,21 @@ Let create the MySQL database. Ensure you have MySQL installed and running, and 
 ```
 mysql -u root -p
 
-mysql> CREATE USER 'flaskcrud_admin'@'localhost' IDENTIFIED BY 'dt2016';
+mysql> CREATE USER 'flaskcrud_admin'@'localhost' IDENTIFIED BY 'flaskcrud';
 Query OK, 0 rows affected (0.00 sec)
 
-mysql> CREATE DATABASE dreamteam_db;
+mysql> CREATE DATABASE flaskcrud_db;
 Query OK, 1 row affected (0.00 sec)
 
-mysql> GRANT ALL PRIVILEGES ON dreamteam_db . * TO 'flaskcrud_admin'@'localhost';
+mysql> GRANT ALL PRIVILEGES ON flaskcrud_db . - TO 'flaskcrud_admin'@'localhost';
 Query OK, 0 rows affected (0.00 sec)
 ```
 
 
 
+## Reference
+
+- https://flask-login.readthedocs.io/en/latest/
 
 
 
