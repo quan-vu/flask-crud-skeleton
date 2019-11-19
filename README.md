@@ -1,8 +1,6 @@
-# Demo Restful API using Flask, Flask-RESTPlus and Swagger UI
+# Flask Skeleton
 
-Flask enables exposure of Python functions as APIs. Flask-RESTPlus is an extension to Flask which allows we define the Restful API with the Swagger UI is integrated for all the APIs.
-
-In this demo, we will develope a Flask application with several APIs and dummy data.
+A simple Flask application for practice.
 
 **Prerequisites**
 
@@ -34,15 +32,14 @@ Next, install Flask, Flask Sqlalchemy and MySQL client library w:
 pip install flask flask-sqlalchemy mysqlclient
 ```
 
-## TODO
+## Features
 
-- [x] Database Setup
-- [x] Models
-- [x] Migration
-- [x] Blueprints
-- [x] Home page
+- [x] SQLAlchemy Database 
+- [x] Models & Migration
+- [x] Structuring project (Blueprints)
 - [x] Authentication
-- [ ] Conclusion
+- [x] Bootstrap
+- [x] Templating
 
 ## Database setup
 
@@ -63,7 +60,6 @@ Query OK, 0 rows affected (0.00 sec)
 
 ## Models & Migrations
 
-
 To create migrations directory run: 
 
 ```
@@ -82,31 +78,24 @@ To apply migrations:
 flask db upgrade
 ```
 
-## Reference
+## Run project
 
-- https://flask-login.readthedocs.io/en/latest/
-
-
-
-
-
-
-
-
-
-## Test the application
-
-Start flask app with virtualenv
+**Start flask app with python3 virtual environtment**
 
 ```shell
 # Create virtual environtment with python3
 virtualenv -p python3 venv
 source venv/bin/activate
-
-# Run flask app
-FLASK_APP=app.py flask run
 ```
 
-Try to test it with Swagger UI here:
+**Start Flask app**
 
-http://127.0.0.1:5000/
+```shell
+export FLASK_CONFIG=development
+export FLASK_APP=run.py
+flask run
+```
+
+Reference:
+
+- https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-one
