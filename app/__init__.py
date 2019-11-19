@@ -26,11 +26,19 @@ def create_app(config_name):
 
     # Created a migrate object which will allow us to run migrations using Flask-Migrate
     # Import the models from the app package for migrate
-    
     migrate = Migrate(app, db)
-
     from app import models
 
+    # Structuring project with Blueprint
+    from .admin import admin as admin_blueprint
+    app.register_blueprint(admin_blueprint, url_prefix='/admin')
+
+    from .auth import auth as auth_blueprint
+    app.register_blueprint(auth_blueprint)
+
+    from .home import home as home_blueprint
+    app.register_blueprint(home_blueprint)
+    
     @app.route('/')
     def hello_world():
         return 'Hello, World 2!'
