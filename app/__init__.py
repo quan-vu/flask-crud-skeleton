@@ -5,6 +5,7 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_migrate import Migrate
+from flask_bootstrap import Bootstrap
 
 # local imports
 from config import app_config
@@ -27,6 +28,9 @@ def create_app(config_name):
     # Created a migrate object which will allow us to run migrations using Flask-Migrate
     # Import the models from the app package for migrate
     migrate = Migrate(app, db)
+    from app import models
+
+    Bootstrap(app)
     from app import models
 
     # Structuring project with Blueprint

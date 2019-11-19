@@ -39,9 +39,9 @@ pip install flask flask-sqlalchemy mysqlclient
 - [x] Database Setup
 - [x] Models
 - [x] Migration
-- [ ] Blueprints
-- [ ] Home Blueprint
-- [ ] Auth Blueprint
+- [x] Blueprints
+- [x] Home page
+- [x] Authentication
 - [ ] Conclusion
 
 ## Database setup
