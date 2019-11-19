@@ -86,6 +86,7 @@ flask db upgrade
 # Create virtual environtment with python3
 virtualenv -p python3 venv
 source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 **Start Flask app**
@@ -96,6 +97,8 @@ export FLASK_APP=run.py
 flask run
 ```
 
-Reference:
+## Reference:
 
 - https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-one
+
+Enjoy :) !
