@@ -4,6 +4,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
+from flask_migrate import Migrate
 
 # local imports
 from config import app_config
@@ -23,8 +24,15 @@ def create_app(config_name):
     login_manager.login_message = "You must be logged in to access this page"
     login_manager.login_view = "auth.login"
 
+    # Created a migrate object which will allow us to run migrations using Flask-Migrate
+    # Import the models from the app package for migrate
+    
+    migrate = Migrate(app, db)
+
+    from app import models
+
     @app.route('/')
     def hello_world():
-        return 'Hello, World!'
+        return 'Hello, World 2!'
 
     return app

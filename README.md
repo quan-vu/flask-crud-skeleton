@@ -38,7 +38,7 @@ pip install flask flask-sqlalchemy mysqlclient
 
 - [x] Database Setup
 - [x] Models
-- [ ] Migration
+- [x] Migration
 - [ ] Blueprints
 - [ ] Home Blueprint
 - [ ] Auth Blueprint
@@ -61,7 +61,26 @@ mysql> GRANT ALL PRIVILEGES ON flaskcrud_db . - TO 'flaskcrud_admin'@'localhost'
 Query OK, 0 rows affected (0.00 sec)
 ```
 
+## Models & Migrations
 
+
+To create migrations directory run: 
+
+```
+flask db init
+```
+
+To create migratons: 
+
+```
+flask db migrate
+```
+
+To apply migrations: 
+
+```
+flask db upgrade
+```
 
 ## Reference
 
