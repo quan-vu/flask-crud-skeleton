@@ -40,6 +40,10 @@ pip install flask flask-sqlalchemy mysqlclient
 - [x] Authentication
 - [x] Bootstrap
 - [x] Templating
+- [ ] Demo CRUD
+- [ ] Deployment with Heroku
+- [ ] CI/CD with Gitlab
+- [ ] Travis test
 
 ## Database setup
 
