@@ -5,3 +5,4 @@ flask-migrate
 flask-wtf
 flask-bootstrap
 psycopg2-binary
+boto3
