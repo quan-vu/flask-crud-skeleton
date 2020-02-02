@@ -101,6 +101,19 @@ export FLASK_APP=run.py
 flask run
 ```
 
+## Docs / User Guide
+
+User guide for quickstart with this Flask CRUD Skeleton project inside docs directory.
+
+To open docs let run this command:
+
+```shell
+$ cd flask-crud-skeleton
+$ mkdocs serve
+```
+
+Open docs on your browser: http://127.0.0.1:8000/
+
 ## Reference:
 
 - https://scotch.io/tutorials/build-a-crud-web-app-with-python-and-flask-part-one
