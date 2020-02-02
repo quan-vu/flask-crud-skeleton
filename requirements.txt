@@ -6,3 +6,5 @@ flask-wtf
 flask-bootstrap
 psycopg2-binary
 gunicorn
+mkdocs
+mkdocs-material
